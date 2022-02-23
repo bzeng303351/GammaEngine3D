@@ -1,0 +1,13 @@
+In BetaEngine3D, I used integers for the coordinates.
+It is not good, because when I need a unit vector, it doesn't work.
+Also, when doing calculation, I have to worry about the overflow of the integer value.
+
+So I decide to use double for the coordinates.
+It takes twice as much of the memory, but solved the problems above.
+
+Ideas about the texture of a rectangle:
+1. use image files, like jpg, and extract the color of the intersection point of the ray.
+2. build large objects with small cubes, each small cube has a single color.
+This is like MineCraft.
+
+No matter what method, I need to calculate the intersect point and distance.
